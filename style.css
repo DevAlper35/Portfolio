@@ -13,7 +13,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color:#fff;
-    --main-color: #a21caf;
+    --main-color: #3a239e;
 }
 
 html{
@@ -26,11 +26,16 @@ body{
     color: var(--text-color);
 }
 
+section{
+    min-height: 100vh;
+    padding: 8rem 10%;
+}
+
 /* HEADER */
 
 header{
     position: fixed;
-    /*background-color: var(--second-bg-color);*/
+    background-color: var(--bg-color);
     width: 100%;
     top: 0;
     left: 0;
@@ -59,7 +64,141 @@ nav > a:hover{
     color: var(--main-color);
 }
 
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
 .home-img > img{
-    width: 20vw;
+    width: 18vw;
     border-radius: 10vw;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.home-content h1{
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.home-content p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: var(--main-color);
+    font-size: 5rem;
+    margin: 5px;
+    transition: all 0.2s ease-in-out
+}
+
+.social-links a:hover {
+    color: var(--text-color);
+    text-shadow: 0rem 0rem 3rem var(--main-color);
+    
+}
+
+.home-span{
+    color:var(--main-color);
+    position:relative
+}
+
+
+.mobile-span,
+.full-span,
+.front-span,
+.back-span{
+    
+    position: absolute;
+    color: transparent;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    background-clip: text;
+    top: 0;
+    left: 0;
+}
+
+.mobile-span{
+    margin-left: 1.5rem; 
+}
+
+.last-span{
+    margin-left: 15rem;
+    color: var(--text-color);
+}
+
+
+@keyframes anime-mobile{
+    0%{
+        width: 0%;
+    }
+    
+    12.5%{
+        width: 100%;
+    }
+    25%{
+        width: 0%;
+    }
+}
+
+@keyframes anime-full{
+    25%{
+        width: 0%;
+    }
+    
+    37.5%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+}
+
+@keyframes anime-front{
+    50%{
+        width: 0%;
+    }
+    
+    62.5%{
+        width: 100%;
+    }
+    75%{
+        width: 0%;
+    }
+}
+
+@keyframes anime-back{
+    75%{
+        width: 0%;
+    }
+    
+    87.5%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.mobile-span {
+    animation: anime-mobile 6s linear infinite;
+}
+.full-span {
+    animation: anime-full 6s linear infinite;
+}
+.front-span {
+    animation: anime-front 6s linear infinite;
+}
+
+.back-span {
+    animation: anime-back 6s linear infinite;
 }
