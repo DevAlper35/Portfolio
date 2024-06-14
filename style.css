@@ -74,6 +74,8 @@ nav > a:hover{
 .home-img > img{
     width: 18vw;
     border-radius: 10vw;
+    border:var(--text-color);
+    background-color: linear-gradient(#e66465, #9198e5);
 }
 
 .home-content h3{
