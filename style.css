@@ -41,7 +41,7 @@ header{
     left: 0;
     padding: 2rem 9%;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     z-index: 10;
 }
@@ -203,4 +203,50 @@ nav > a:hover{
 
 .back-span {
     animation: anime-back 6s linear infinite;
+}
+
+
+#project{
+
+}
+
+#project > img{
+    width: 50vw;
+    border-radius: 20px;
+    border:var(--text-color);
+}
+
+@media screen and (max-width: 576px) {
+    #home {
+        flex-direction: column-reverse;
+        gap: 1vh;
+    }
+
+    .home-content h1 {
+        font-size: 7vw;
+        
+    } 
+
+    .home-content h3 {
+        font-size: 5.5vw;
+    }
+
+    .last-span {
+        margin-left: 26vw;
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section{
+        justify-items: center;
+        padding-bottom: 0;
+        padding-top: 4rem;
+    }
+
+    header{
+        padding-bottom: 0;
+    }
 }
