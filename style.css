@@ -226,6 +226,9 @@ nav > a:hover{
         font-size: 7vw;
         
     } 
+    .home-content>h3:first-child{
+        display: none;
+    }
 
     .home-content h3 {
         font-size: 5.5vw;
@@ -242,11 +245,17 @@ nav > a:hover{
 
     section{
         justify-items: center;
+        padding-top: 0;
         padding-bottom: 0;
-        padding-top: 4rem;
+        
     }
 
     header{
+        
         padding-bottom: 0;
+        display: none;
+        
     }
+
+    
 }
