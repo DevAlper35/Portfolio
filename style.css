@@ -313,17 +313,16 @@ nav > a:hover{
 
     section{
         justify-items: center;
-        padding-top: 0;
+        padding-top: 45px;
         padding-bottom: 0;
         
     }
 
     header{
-        
+        /*
         padding-bottom: 0;
         display: none;
+        */
         
-    }
-
-    
+    }  
 }
