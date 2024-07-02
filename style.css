@@ -293,7 +293,9 @@ nav > a:hover{
         
     } 
     .home-content>h3:first-child{
+        /*
         display: none;
+        */
     }
 
     .home-content h3 {
