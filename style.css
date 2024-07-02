@@ -219,10 +219,11 @@ nav > a:hover{
 
 .project > img{
     margin: 10px;
-    width: 35vw;
+    height: 35vh;
     border-radius: 20px;
     border:var(--main-color);
     border-width: 15px;
+    
 }
 
 
