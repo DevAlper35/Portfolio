@@ -205,16 +205,52 @@ nav > a:hover{
     animation: anime-back 6s linear infinite;
 }
 
-
-#project{
-
+.project{
+    display: inline-block;
+    text-align: center;
 }
 
-#project > img{
-    width: 50vw;
+#project > h2{
+    margin: 50px;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+
+.project > img{
+    margin: 10px;
+    width: 35vw;
     border-radius: 20px;
-    border:var(--text-color);
+    border:var(--main-color);
+    border-width: 15px;
 }
+
+
+
+
+
+.certificate{
+    display: inline-block;
+    text-align: center;
+}
+
+#certificate > h2{
+    margin: 50px;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+
+.certificate > img{
+    margin: 10px;
+    height: 35vh;
+    border-radius: 20px;
+    border:var(--main-color);
+    
+    border-width: 15px;
+}
+
+
 
 @media screen and (max-width: 576px) {
     #home {
