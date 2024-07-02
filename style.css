@@ -259,6 +259,11 @@ nav > a:hover{
         gap: 1vh;
     }
 
+    .project > img,.certificate > img{
+        width: 100%;
+        height: auto;
+    }
+
     .home-content h1 {
         font-size: 7vw;
         
