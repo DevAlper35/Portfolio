@@ -276,6 +276,10 @@ nav > a:hover{
     margin-bottom: 50px;
 }
 
+.center{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 576px) {
     #home {
