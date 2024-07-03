@@ -301,7 +301,7 @@ nav > a:hover{
         gap: 1vh;
     }
 
-    .project > img,.certificate > img{
+    .project  img,.certificate  img{
         width: 95%;
         height: auto;
     }
