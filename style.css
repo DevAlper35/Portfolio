@@ -205,9 +205,11 @@ nav > a:hover{
     animation: anime-back 6s linear infinite;
 }
 
+
+
 .project{
-    display: inline-block;
     text-align: center;
+    position: relative;
 }
 
 #project > h2{
@@ -217,13 +219,21 @@ nav > a:hover{
 }
 
 
-.project > img{
-    margin: 10px;
+.project  img{
+    margin: 5px;
     height: 35vh;
     border-radius: 20px;
     border:var(--main-color);
     border-width: 15px;
-    
+}
+
+.project div{
+    display: inline-block;
+    margin: 20px;
+}
+
+.project div:hover img{
+    opacity: 50%;
 }
 
 
@@ -231,7 +241,6 @@ nav > a:hover{
 
 
 .certificate{
-    display: inline-block;
     text-align: center;
 }
 
@@ -242,12 +251,17 @@ nav > a:hover{
 }
 
 
-.certificate > img{
-    margin: 10px;
+.certificate img{
+    margin: 5px;
     height: 35vh;
     border-radius: 20px;
     border:var(--main-color);
     border-width: 15px;
+}
+
+.certificate div{
+    display: inline-block;
+    margin: 20px;
 }
 
 
