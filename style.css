@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,31 +9,31 @@
     font-family: "Exo 2", sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --text-color:#fff;
+    --text-color: #fff;
     --main-color: #5238c5;
 }
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 8rem 10%;
 }
 
 /* HEADER */
 
-header{
+header {
     position: fixed;
     background-color: var(--bg-color);
     width: 100%;
@@ -41,56 +41,56 @@ header{
     left: 0;
     padding: 2rem 9%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     z-index: 10;
 }
 
-.logo{
+.logo {
     font-size: 2.5rem;
-    color:var(--text-color);
+    color: var(--text-color);
     cursor: pointer;
     font-weight: 600;
 }
 
-nav > a{
+nav>a {
     font-size: 1.6rem;
     color: var(--text-color);
     margin-left: 10px;
     font-weight: 600;
 }
 
-nav > a:hover{
+nav>a:hover {
     color: var(--main-color);
 }
 
-#home{
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.home-img > img{
+.home-img>img {
     width: 18vw;
     border-radius: 10vw;
-    border:var(--text-color);
+    border: var(--text-color);
     background-color: linear-gradient(#e66465, #9198e5);
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 5.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.8rem;
     margin-bottom: 2rem;
 }
@@ -105,20 +105,20 @@ nav > a:hover{
 .social-links a:hover {
     color: var(--text-color);
     text-shadow: 0rem 0rem 3rem var(--main-color);
-    
+
 }
 
-.home-span{
-    color:var(--main-color);
-    position:relative
+.home-span {
+    color: var(--main-color);
+    position: relative
 }
 
 
 .mobile-span,
 .full-span,
 .front-span,
-.back-span{
-    
+.back-span {
+
     position: absolute;
     color: transparent;
     width: 0;
@@ -129,64 +129,68 @@ nav > a:hover{
     left: 0;
 }
 
-.mobile-span{
-    margin-left: 1.5rem; 
+.mobile-span {
+    margin-left: 1.5rem;
 }
 
-.last-span{
+.last-span {
     margin-left: 15rem;
     color: var(--text-color);
 }
 
 
-@keyframes anime-mobile{
-    0%{
+@keyframes anime-mobile {
+    0% {
         width: 0%;
     }
-    
-    12.5%{
+
+    12.5% {
         width: 100%;
     }
-    25%{
+
+    25% {
         width: 0%;
     }
 }
 
-@keyframes anime-full{
-    25%{
+@keyframes anime-full {
+    25% {
         width: 0%;
     }
-    
-    37.5%{
+
+    37.5% {
         width: 100%;
     }
-    50%{
+
+    50% {
         width: 0%;
     }
 }
 
-@keyframes anime-front{
-    50%{
+@keyframes anime-front {
+    50% {
         width: 0%;
     }
-    
-    62.5%{
+
+    62.5% {
         width: 100%;
     }
-    75%{
+
+    75% {
         width: 0%;
     }
 }
 
-@keyframes anime-back{
-    75%{
+@keyframes anime-back {
+    75% {
         width: 0%;
     }
-    
-    87.5%{
+
+    87.5% {
         width: 100%;
     }
-    100%{
+
+    100% {
         width: 0%;
     }
 }
@@ -194,9 +198,11 @@ nav > a:hover{
 .mobile-span {
     animation: anime-mobile 6s linear infinite;
 }
+
 .full-span {
     animation: anime-full 6s linear infinite;
 }
+
 .front-span {
     animation: anime-front 6s linear infinite;
 }
@@ -207,32 +213,32 @@ nav > a:hover{
 
 
 
-.project{
+.project {
     text-align: center;
-    position: relative;
+    margin: 0, 50;
 }
 
-#project > h2{
+#project>h2 {
     margin: 30px;
     text-align: center;
     font-size: 3.2rem;
 }
 
 
-.project  img{
+.project img {
     margin: 5px;
-    height: 35vh;
+    width: 95%;
     border-radius: 20px;
-    border:var(--main-color);
+    border: var(--main-color);
     border-width: 15px;
 }
 
-.project div{
-    display: inline-block;
-    margin: 20px;
+.project div {
+    display: block;
+    margin: 100px 0px;
 }
 
-.project div:hover img{
+.project div:hover img {
     opacity: 50%;
 }
 
@@ -240,57 +246,57 @@ nav > a:hover{
 
 
 
-.certificate{
+.certificate {
     text-align: center;
 }
 
-#certificate > h2{
+#certificate>h2 {
     margin: 30px;
     text-align: center;
     font-size: 3.2rem;
 }
 
 
-.certificate img{
+.certificate img {
     margin: 5px;
     height: 35vh;
     border-radius: 20px;
-    border:var(--main-color);
+    border: var(--main-color);
     border-width: 15px;
 }
 
-.certificate div{
+.certificate div {
     display: inline-block;
     margin: 20px;
 }
 
 
 
-.contact{
+.contact {
     display: inline-block;
     text-align: center;
-    
+
 }
 
-#contact > h2{
+#contact>h2 {
     padding: 50px;
     text-align: center;
     font-size: 3.2rem;
 }
 
-#contact > h3{
+#contact>h3 {
     padding: 10px;
     font-size: 3rem;
     text-align: center;
 }
 
-#contact > h4{
+#contact>h4 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -301,16 +307,18 @@ nav > a:hover{
         gap: 1vh;
     }
 
-    .project  img,.certificate  img{
+    .project img,
+    .certificate img {
         width: 95%;
         height: auto;
     }
 
     .home-content h1 {
         font-size: 7vw;
-        
-    } 
-    .home-content>h3:first-child{
+
+    }
+
+    .home-content>h3:first-child {
         /*
         display: none;
         */
@@ -324,23 +332,23 @@ nav > a:hover{
         margin-left: 26vw;
     }
 
-    .social-links{
+    .social-links {
         display: flex;
         justify-content: space-around;
     }
 
-    section{
+    section {
         justify-items: center;
         padding-top: 45px;
         padding-bottom: 0;
-        
+
     }
 
-    header{
+    header {
         /*
         padding-bottom: 0;
         display: none;
         */
-        
-    }  
+
+    }
 }
