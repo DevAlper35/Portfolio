@@ -219,9 +219,10 @@ nav>a:hover {
 }
 
 #project>h2 {
-    margin: 30px;
+    margin: 20px;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 6.2rem;
+
 }
 
 
@@ -251,9 +252,9 @@ nav>a:hover {
 }
 
 #certificate>h2 {
-    margin: 30px;
+    margin: 20px;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 6.2rem;
 }
 
 
@@ -281,7 +282,7 @@ nav>a:hover {
 #contact>h2 {
     padding: 50px;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 6.2rem;
 }
 
 #contact>h3 {
